@@ -5,11 +5,7 @@ type Props = {
 };
 
 const ItemTitle = ({ title }: Props) => {
-  return (
-    <a className="item-title--link" href="#">
-      <h2 className="item-title">{title}</h2>
-    </a>
-  );
+  return <h2 className="item-title item-title--link">{title}</h2>;
 };
 
 export default ItemTitle;

@@ -8,9 +8,7 @@ type Props = {
 const ItemLogo = ({ src, alt }: Props) => {
   return (
     <div className="item-logo">
-      <a href="#">
-        <img src={src} alt={alt} />
-      </a>
+      <img src={src} alt={alt} />
     </div>
   );
 };
