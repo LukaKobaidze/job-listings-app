@@ -16,13 +16,15 @@ const Header = ({ className }: Props) => {
   );
   return (
     <header className={`header ${className}`}>
-      <Picture
-        className="header__image"
-        desktop={imageBgDesktop}
-        mobile={imageBgMobile}
-        alt=""
-      />
-      <Filter filters={currentFilters} />
+      <div className="header__img-div">
+        <Picture
+          className="header__img-div__image"
+          desktop={imageBgDesktop}
+          mobile={imageBgMobile}
+          alt=""
+        />
+        <Filter filters={currentFilters} />
+      </div>
     </header>
   );
 };
