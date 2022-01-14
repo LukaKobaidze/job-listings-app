@@ -19,7 +19,6 @@ type Props = {
 };
 
 const JobListItem = (props: Props) => {
-  console.log(props.logo);
   return (
     <li className="job-list-item">
       <Element

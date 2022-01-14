@@ -11,8 +11,8 @@
   font-family: inherit;
   cursor: pointer;
 
-  @media (max-width: 335px) {
-    font-size: 11px;
+  @media (max-width: 435px) {
+    font-size: 12px;
   }
 
   &:hover + &__icon {
@@ -27,13 +27,17 @@
     border-radius: 5px;
     overflow: hidden;
 
-    @media (max-width: 335px) {
+    @media (max-width: 435px) {
       height: 30px;
     }
 
     &:not(:last-child) {
       margin-right: 20px;
       margin-bottom: 5px;
+
+      @media (max-width: 435px) {
+        margin-bottom: 15px;
+      }
     }
   }
 
