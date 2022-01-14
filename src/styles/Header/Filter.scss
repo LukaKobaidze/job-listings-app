@@ -1,0 +1,64 @@
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  &--wrapper {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: calc(100% - var(--layout-margin) * 2);
+    min-width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+    transform: translate(-50%, 50%);
+    animation: fadeIn 0.25s;
+
+    @media (max-width: 1075px) {
+      min-width: 533px;
+    }
+    @media (max-width: 600px) {
+      width: 95%;
+      min-width: initial;
+    }
+  }
+  &--hidden {
+    opacity: 0;
+    animation: fadeOut 0.25s;
+    animation-fill-mode: forwards;
+  }
+
+  &-buttons-div {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: 1075px) {
+      max-width: 85%;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translate(-50%, 25%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, 25%);
+    opacity: 0;
+  }
+}

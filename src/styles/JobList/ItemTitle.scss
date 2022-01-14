@@ -1,0 +1,18 @@
+.item-title {
+  margin-top: 15px;
+  font-size: 19px;
+
+  @media (max-width: 450px) {
+    font-size: 17px;
+  }
+
+  &--link {
+    color: var(--clr-very-dark-grayish-cyan);
+    text-decoration: none;
+    transition: color 0.1s ease-out;
+
+    &:hover {
+      color: var(--clr-desaturated-dark-cyan);
+    }
+  }
+}

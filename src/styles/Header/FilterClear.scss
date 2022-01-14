@@ -1,0 +1,15 @@
+.filter-clear {
+  margin-left: auto;
+  border-bottom: 1px solid transparent;
+  border: none;
+  background: none;
+  color: var(--clr-dark-grayish-cyan);
+  font-family: inherit;
+  font-weight: var(--font-weight-bold);
+  font-size: inherit;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 1px solid currentColor;
+  }
+}
